@@ -120,7 +120,7 @@ int main(void)
                     for (int i = 0; i < particleNum; ++i)
                         particlePositions[i] = candyPosition;
                     
-                    for (int i = 0; i < maxParticles; i++)
+                    for (int i = 0; i < maxParticles; ++i)
                         particleVelocities[i] = Vector2Zero();
                     candyScore = 0;
 
@@ -157,7 +157,7 @@ int main(void)
                 particleColor = candyColor;
                 particleRadius = 20;
 
-                for (int i = 0; i < particleNum; i++)
+                for (int i = 0; i < particleNum; ++i)
                 {
                     particlePositions[i] = candyPosition;
                     particleVelocities[i].x = sin(DEG2RAD * (i * 360/particleNum)) * (particleSpeed * GetFrameTime());
